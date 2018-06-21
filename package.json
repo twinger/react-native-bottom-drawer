@@ -1,37 +1,68 @@
 {
-  "name": "react-native-bottom-drawer",
-  "version": "1.0.2",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "_from": "react-native-bottom-drawer",
+  "_id": "react-native-bottom-drawer@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-5oe6Fa6qxgwVc12jgfYNy9cruB0=",
+  "_location": "/react-native-bottom-drawer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-bottom-drawer",
+    "name": "react-native-bottom-drawer",
+    "escapedName": "react-native-bottom-drawer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "author": "Konstantin Shkut <konstantin.shkut@gmail.com> (http://rationalappdev.com)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/rationalappdev/react-native-bottom-drawer.git"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-bottom-drawer/-/react-native-bottom-drawer-1.0.2.tgz",
+  "_shasum": "e687ba15aeaac60c15735da381f60dcbd72bb81d",
+  "_spec": "react-native-bottom-drawer",
+  "_where": "/Volumes/Data/Data/PROJECT/Twinger/Outsource/TwoWay/TwoWayApp",
+  "author": {
+    "name": "Konstantin Shkut",
+    "email": "konstantin.shkut@gmail.com",
+    "url": "http://rationalappdev.com"
   },
   "bugs": {
     "url": "https://github.com/rationalappdev/react-native-bottom-drawer/issues"
   },
-  "homepage": "https://github.com/rationalappdev/react-native-bottom-drawer#readme",
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "",
-  "keywords": [
-    "react-native",
-    "drawer"
-  ],
-  "peerDependencies": {
-    "react-native-vector-icons": "^4.0.0"
-  },
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
     "jest": "^19.0.2",
     "react": "^15.4.2",
     "react-native": "^0.42.3",
-    "react-test-renderer": "^15.4.2"
+    "react-test-renderer": "^15.4.2",
+    "prop-types": "^15.6.1"
   },
+  "homepage": "https://github.com/rationalappdev/react-native-bottom-drawer#readme",
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "drawer"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-bottom-drawer",
+  "peerDependencies": {
+    "react-native-vector-icons": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rationalappdev/react-native-bottom-drawer.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.0.2"
 }
