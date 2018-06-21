@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
   Animated,
   Dimensions,
@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-
+import PropTypes from 'prop-types';
 // Get screen dimensions
 const { width, height } = Dimensions.get('window');
 
@@ -145,18 +145,18 @@ export default class Drawer extends Component {
       // Interpolate position value into width value
       animatedWidth = this._animatedWidth.interpolate({
         inputRange: [this.config.position.min,// top of the screen
-          this.config.position.start - 50,    // 50 pixels higher than next point
-          this.config.position.start,         // a bit higher than the bottom of the screen
-          this.config.position.max            // the bottom of the screen
+        this.config.position.start - 50,    // 50 pixels higher than next point
+        this.config.position.start,         // a bit higher than the bottom of the screen
+        this.config.position.max            // the bottom of the screen
         ],
         outputRange: [this.config.width.end,  // keep max width after next point
-          this.config.width.end,              // end: max width at 50 pixel higher
-          this.config.width.start,            // start: min width at the bottom
-          this.config.width.start             // keep min width before previous point
+        this.config.width.end,              // end: max width at 50 pixel higher
+        this.config.width.start,            // start: min width at the bottom
+        this.config.width.start             // keep min width before previous point
         ],
       });
     return (
-      <Animated.View style={[styles.container, this.getContainerStyle()]}>
+      <Animated.View style={[styles.container, this.getContainerStyle(), { ...this.props.style }]}>
         {/* Use light status bar because we have dark background */}
         <StatusBar barStyle={"light-content"} />
         {/* Backdrop with animated opacity */}
@@ -356,7 +356,7 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,   // fill up all screen
     alignItems: 'center',               // center children
     justifyContent: 'flex-end',         // align popup at the bottom
-    backgroundColor: 'transparent',     // transparent background
+    backgroundColor: 'transparent',     // transparent background,
   },
   // Semi-transparent background below popup
   backdrop: {
